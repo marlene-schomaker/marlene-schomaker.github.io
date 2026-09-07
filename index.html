@@ -7,11 +7,11 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         body {
-        background-color: #eec2d4;
+        background-color: #eeafb5;
         color: #7d2c4c;
         }
         h1, h2, h3 {
-            color: #421024;
+            color: #b92f66;
         }
         a:hover{
             color: #421024
@@ -23,6 +23,17 @@
             padding: 20px;
             text-align: center;
         }
+        .intro-text {
+            margin-top: -10px;     
+        }
+        fieldset {
+            margin-top: -20px;
+            border: 2px solid #b92f66;
+            border-radius: 20px;
+            background: linear-gradient(120deg,#FFC6CA, #f9dcc0);
+            box-shadow: 0 0 12px 3px #b92f663d,
+                inset 0 0 3px #b92f66;
+        }
 
     </style>
 </head>
@@ -32,11 +43,13 @@
         <h2>Welcome to my personal webpage!</h2>
     </header>
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello, I'm a Computer Science Major at UNC Charlotte. I graduate in the Fall of 2027, and right now my favorite thing to learn about is how the front-end works.</p>
+        <fieldset>
+            <legend>
+                <h2>About Me</h2>
+            </legend>
+            <p class="intro-text">Hello, I'm a Computer Science Major at UNC Charlotte. I graduate in the Fall of 2027, and right now my favorite thing to learn about is how the front-end works.</p>
             <p>In my free time, I like to draw and bake, as well as spend time with my family. </p>
-        </section>
+        </fieldset>
     </main>
     <h3>Hi it's Marlene, and this is the root of my website.</h3>
     <a href="itis3135" >Click to go to ITIS3135</a>
