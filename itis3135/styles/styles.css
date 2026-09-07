@@ -1,0 +1,40 @@
+body {
+    background-color: #eec2d4;
+    color: #7d2c4c;
+}
+figure {
+    text-align: center;
+}
+figcaption {
+    font-style: italic;
+}
+h1, h2 {
+    color: #421024;
+}
+.intro-name {
+    font-size: large;
+    text-align: center;
+    color: #4e1129;
+}
+.intro-pic {
+    height: 400px;
+    width: auto;
+}
+/*quotation for intro*/
+blockquote {
+    text-align: center;
+}  
+.citation {
+    text-align: center;
+    font-style: italic;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+}
+a:hover{
+    color: #421024
+}
+a {
+    color: #7d2c4c;
+}
