@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drawing | Lines &amp; Light</title>
+	<style>
+		:root { color-scheme: light; --ink: #293d35; --paper: #f4ead8; --rust: #9c4935; --gold: #d5a847; --cream: #fff8ec; }
+		* { box-sizing: border-box; }
+		body { margin: 0; background: #dfcfb4; color: var(--ink); font: 1rem/1.65 "Trebuchet MS", Arial, sans-serif; }
+		header, main, footer { max-width: 960px; margin: auto; }
+		header { padding: 2rem 1.25rem 1rem; }
+		h1, h2 { font-family: Georgia, "Palatino Linotype", serif; line-height: 1.2; }
+		h1 { margin: 0; color: var(--rust); font-size: clamp(2.4rem, 6vw, 4rem); }
+		.tagline { margin: .3rem 0 1rem; }
+		nav { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+		nav a { color: var(--ink); font-weight: 700; padding: .4rem .65rem; border: 2px solid var(--ink); border-radius: 2rem; text-decoration: none; }
+		nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { color: var(--cream); background: var(--ink); outline-offset: 3px; }
+		nav span { color: var(--rust); font-weight: 700; }
+		main { min-height: 55vh; padding: 1rem 1.25rem 2rem; }
+		section { padding: 1.5rem; background: var(--paper); border-left: 7px solid var(--gold); border-radius: 0 1rem 1rem 0; box-shadow: 0 5px 16px #293d3520; }
+		section h2 { margin-top: 0; color: var(--rust); font-size: 2rem; }
+		figure { max-width: 600px; margin: 1.25rem auto; padding: .75rem; background: var(--cream); border-radius: .7rem; }
+		figure img { display: block; width: 100%; height: auto; max-height: 350px; object-fit: cover; border-radius: .4rem; }
+		figcaption { margin-top: .5rem; font-weight: 700; }
+		figure p { margin: .25rem 0 0; font-size: .9rem; }
+		footer { padding: 1rem 1.25rem 2rem; }
+		footer a { color: #713421; }
+		.validators { display: flex; flex-wrap: wrap; gap: .6rem; }
+		.validators a { color: var(--ink); padding: .35rem .55rem; border: 1px solid var(--ink); border-radius: .35rem; text-decoration: none; }
+		[hidden] { display: none !important; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Drawing</h1>
+		<p class="tagline">A hobby in lines, shapes, and happy accidents.</p>
+		<nav aria-label="Hobby pages">
+			<a href="#what" data-page="what" aria-current="page">What</a><span aria-hidden="true">✦</span>
+			<a href="#who" data-page="who">Who</a><span aria-hidden="true">✦</span>
+			<a href="#when" data-page="when">When</a><span aria-hidden="true">✦</span>
+			<a href="#where" data-page="where">Where</a><span aria-hidden="true">✦</span>
+			<a href="#how" data-page="how">How</a><span aria-hidden="true">✦</span>
+			<a href="#why" data-page="why">Why</a><span aria-hidden="true">✦</span>
+		</nav>
+	</header>
+	<main>
+		<section id="what" aria-labelledby="what-heading">
+			<h2 id="what-heading">What: The joy of drawing</h2>
+			<p>Drawing is making art. A pencil, a scrap of paper, and curiosity are enough to begin.</p>
+			<p>Sketching can be spontaneous or carefully planned; there is no right way to make a picture.</p>
+			<figure><img src="images/spontaneous_sketch.jpeg" alt="Spontaneous sketch" width="800" height="533"><figcaption>A welcoming space for making art.</figcaption></figure>
+		</section>
+		<section id="who" aria-labelledby="who-heading" hidden>
+			<h2 id="who-heading">Who: Anyone can draw</h2>
+			<p>Drawing is both for beginners and experienced artists. Each sketch is a chance to notice and learnsomething new.</p>
+			<p>My approach is to practice regularly and value the process more than perfection.</p>
+			<figure><img src="images/beginner_painting.jpg" alt="Beginner painting" width="800" height="533"><figcaption>Make room for your own point of view.</figcaption></figure>
+		</section>
+		<section id="when" aria-labelledby="when-heading" hidden>
+			<h2 id="when-heading">When: Find your moment</h2>
+			<p>A short daily sketch is easier to keep up than waiting for a perfect, long session.</p>
+			<p>Morning light is useful for observation; a quiet evening can be ideal for imaginative drawing.</p>
+			<ul><li>Five-minute warm-up: lines and circles.</li><li>Weekly session: one longer study.</li><li>Anytime: keep a pocket sketchbook nearby.</li></ul>
+			<figure><img src="images/art_supplies.jpg" alt="Art supplies" width="800" height="533"><figcaption>Set out supplies before your drawing time.</figcaption></figure>
+		</section>
+		<section id="where" aria-labelledby="where-heading" hidden>
+			<h2 id="where-heading">Where: Draw what is around you</h2>
+			<p>A desk at home offers familiar comfort; a café can provide lively people-watching.</p>
+			<p>Parks, gardens, and museums offer changing shapes, light, and ideas. Choose a place where you can focus safely.</p>
+			<ul><li>At home: arrange a small, comfortable workspace.</li><li>Outside: bring a portable sketchbook.</li><li>On the go: draw objects from memory.</li></ul>
+			<figure><img src="images/sketching_outside.jpg" alt="sketching outside" width="800" height="533"><figcaption>A sketchbook travels wherever inspiration appears.</figcaption></figure>
+		</section>
+		<section id="how" aria-labelledby="how-heading" hidden>
+			<h2 id="how-heading">How: Start with simple shapes</h2>
+			<p>Gather paper and a pencil, then warm up with loose lines and circles. Look for the largest shapes in your subject.</p>
+			<p>Build forms lightly before adding details, and use dark marks where you want emphasis.</p>
+			<ol><li>Observe the subject for a few seconds.</li><li>Block in its basic shapes.</li><li>Refine edges, shadows, and details.</li></ol>
+			<figure><img src="images/charcoal_portrait.jpg" alt="A charcoal portrait" width="800" height="533"><figcaption>Small studies build confidence one mark at a time.</figcaption></figure>
+		</section>
+		<section id="why" aria-labelledby="why-heading" hidden>
+			<h2 id="why-heading">Why: Notice, learn, and unwind</h2>
+			<p>Drawing encourages close observation: the curve of a leaf or the way a shadow falls becomes easier to see.</p>
+			<p>It can be a calming break from screens and a satisfying way to express ideas without words.</p>
+			<ul><li>Build patience through regular practice.</li><li>Record small moments and memories.</li><li>Enjoy experimenting without pressure.</li></ul>
+			<figure><img src="images/leaf_sketch.jpg" alt="Leaf sketch" width="800" height="533"><figcaption>Let the sketchbook be a record of exploration.</figcaption></figure>
+		</section>
+	</main>
+	<footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/mschoma1/" target="_blank">Webspace</a>
+            <a href="https://github.com/marlene-schomaker" target="_blank">GitHub.com</a>
+            <a href="https://github.com/marlene-schomaker/marlene-schomaker.github.io" target="_blank">Github.io</a>
+            <a href="https://www.freecodecamp.org/marlene-schomaker" target="_blank">FreeCodeCamp</a>
+            <a href="https://www.codecademy.com/profiles/marlene_schomaker" target="_blank">Codecademy</a>
+            <a href="https://www.linkedin.com/in/marlene-schomaker-9a6226210/" target="_blank">LinkedIn</a>
+        </nav>
+        <p>Page designed by <a href="schomakerdesigns.com/">Schomaker Designs</a> ©2026</p>
+    </footer>
+	<script>
+		const pageLinks = document.querySelectorAll('nav [data-page]');
+		const sections = document.querySelectorAll('main section');
+		function showPage(id) {
+			const selected = document.getElementById(id);
+			if (!selected || !selected.matches('main section')) return;
+			sections.forEach(section => { section.hidden = section !== selected; });
+			pageLinks.forEach(link => {
+				if (link.dataset.page === id) link.setAttribute('aria-current', 'page');
+				else link.removeAttribute('aria-current');
+			});
+		}
+		pageLinks.forEach(link => link.addEventListener('click', () => showPage(link.dataset.page)));
+		window.addEventListener('hashchange', () => showPage(location.hash.slice(1) || 'what'));
+		showPage(location.hash.slice(1) || 'what');
+	</script>
+</body>
+</html>
