@@ -3,59 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marlene Schomaker's Webpage</title>
+    <title>Marlene Schomaker's Webpage | Welcome to My Personal Webpage</title>
+    <link rel="icon" type="image/x-icon" href="itis3135/images/favicon.ico">
     <style>
+        :root {
+            color-scheme: light;
+            --ink: #3d2532;
+            --berry: #7d2c4c;
+            --berry-dark: #572039;
+            --rose: #f0cbd0;
+            --paper: #fff9f5;
+            --muted: #655660;
+            --site-title-size: 3rem;
+        }
+        * { box-sizing: border-box; }
         body {
-        background-color: #eeafb5;
-        color: #7d2c4c;
+            margin: 0;
+            background: #eeafb5;
+            color: var(--ink);
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            line-height: 1.65;
         }
-        h1, h2, h3 {
-            color: #b92f66;
+        header, main, footer {
+            max-width: 960px;
+            margin: auto;
         }
-        a:hover{
-            color: #421024
+        header {
+            padding: 2rem 1.5rem 1.5rem;
+            border-bottom: 1px solid #d9b9c3;
         }
-        a {
-            color: #7d2c4c;
+        h1 {
+            margin: 0;
+            color: var(--berry-dark);
+            font-family: Georgia, "Palatino Linotype", serif;
+            font-size: var(--site-title-size);
+            line-height: 1.15;
+        }
+        h2 {
+            margin: 0 0 1rem;
+            color: var(--berry-dark);
+            font-family: Georgia, "Palatino Linotype", serif;
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+        h3 {
+            margin-top: 0;
+            color: var(--berry);
+            font-family: Georgia, "Palatino Linotype", serif;
+            font-size: 1.4rem;
+            line-height: 1.25;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .65rem;
+            margin-top: 1.25rem;
+        }
+        a, a:visited {
+            color: var(--berry);
+        }
+        nav a, nav a:visited {
+            display: inline-block;
+            padding: .55rem .9rem;
+            border: 1px solid var(--berry);
+            border-radius: 6px;
+            background: var(--rose);
+            color: var(--berry);
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color .18s ease, color .18s ease, transform .18s ease;
+        }
+        nav a:hover, nav a:focus-visible {
+            background: var(--berry);
+            color: var(--paper);
+            transform: translateY(-2px);
+        }
+        nav a:focus-visible {
+            outline: 3px solid var(--berry-dark);
+            outline-offset: 3px;
+        }
+        main {
+            padding: 2rem 1.5rem;
+        }
+        main > p {
+            max-width: 65ch;
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+        figure {
+            max-width: 320px;
+            margin: 1.5rem 0 0;
+        }
+        figure img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        figcaption {
+            margin-top: .5rem;
+            color: var(--muted);
+            font-size: .9rem;
+            font-style: italic;
         }
         footer {
-            padding: 20px;
-            text-align: center;
+            padding: 1.5rem;
+            border-top: 1px solid #d9b9c3;
         }
-        .intro-text {
-            margin-top: -10px;     
+        footer p {
+            margin-bottom: 0;
+            color: var(--muted);
         }
-        fieldset {
-            margin-top: -20px;
-            border: 2px solid #b92f66;
-            border-radius: 20px;
-            background: linear-gradient(120deg,#FFC6CA, #f9dcc0);
-            box-shadow: 0 0 12px 3px #b92f663d,
-                inset 0 0 3px #b92f66;
+        @media (max-width: 640px) {
+            :root { --site-title-size: 2.25rem; }
+            main { padding-top: 1.5rem; }
         }
-
     </style>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js"></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Marlene Schomaker's Webpage</h1>
-    <header>  
-        <h2>Welcome to my personal webpage!</h2>
+    <header>
+        <h1>Marlene Schomaker's Webpage</h1>
+        <p><em>Learning, creating, and sharing along the way.</em></p>
+        <nav aria-label="Site pages">
+            <a href="itis3135/index.html">ITIS 3135</a>
+        </nav>
     </header>
     <main>
-        <fieldset>
-            <legend>
-                <h2>About Me</h2>
-            </legend>
-            <p class="intro-text">Hello, I'm a Computer Science Major at UNC Charlotte. I graduate in the Fall of 2027, and right now my favorite thing to learn about is how the front-end works.</p>
-            <p>In my free time, I like to draw and bake, as well as spend time with my family. </p>
-        </fieldset>
+        <h2>Welcome to My Personal Webpage</h2>
+        <p>Hi, I'm Marlene, and this is the home of my website.</p>
+        <section>
+            <h3>About Me</h3>
+            <p>I'm a Computer Science major at UNC Charlotte. I expect to graduate in Fall 2027, and I'm especially interested in how front-end development works.</p>
+            <p>In my free time, these are some of my hobbies: I enjoy drawing, baking, occasionally hiking, and spending time with my family.</p>
+            <figure>
+                <img src="itis3135/images/hiking.jpeg" alt="Waterfall over rocks along a hiking trail">
+                <figcaption>Waterfall on one of my favorite hikes.</figcaption>
+            </figure>
+        </section>
     </main>
-    <h3>Hi it's Marlene, and this is the root of my website.</h3>
-    <a href="itis3135" >Click to go to ITIS3135</a>
-    <div data-include="itis3135/components/footer.html"></div>
-
-    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js"></script>
-    <script src="scripts/HTMLInclude.min.js"></script>
+    <footer>
+        <nav aria-label="Profile links">
+            <a href="https://webpages.charlotte.edu/mschoma1/" target="_blank">Webspace</a>
+            <a href="https://github.com/marlene-schomaker" target="_blank">GitHub</a>
+            <a href="https://www.freecodecamp.org/marlene-schomaker" target="_blank">freeCodeCamp</a>
+            <a href="https://www.codecademy.com/profiles/marlene_schomaker" target="_blank">Codecademy</a>
+            <a href="https://www.linkedin.com/in/marlene-schomaker-9a6226210/" target="_blank">LinkedIn</a>
+        </nav>
+        <p>Page designed by <a href="itis3135/schomakerdesigns.com/">Schomaker Designs</a> &copy; 2026</p>
+    </footer>
 </body>
 </html>
